@@ -22,3 +22,10 @@ The service is designed to handle time zone conversions, ensuring all timestamps
 Currently, application is configured to run with H2 database accessible at url [http://localhost:8551/h2-console/login.jsp]()
 with following properties.
 
+```
+   JDBC URL : jdbc:h2:mem:conference_room_booking
+   User name : sa
+   Password : password
+```   
+
+
