@@ -4,7 +4,7 @@ import com.cercli.employee.management.employeeservice.dto.EmployeeDto;
 import com.cercli.employee.management.employeeservice.entity.EmployeeEntity;
 import org.mapstruct.Mapper;
 
-@Mapper(componentModel = "spring")
+@Mapper(componentModel = "spring", uses = JurisdictionMapper.class)
 public interface EmployeeMapper {
 
     EmployeeEntity mapToEntity(EmployeeDto source);
