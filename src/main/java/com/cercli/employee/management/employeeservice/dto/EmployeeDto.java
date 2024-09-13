@@ -16,6 +16,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @FieldDefaults(level = AccessLevel.PRIVATE)
+@NoArgsConstructor
 public class EmployeeDto {
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
     UUID employeeId;

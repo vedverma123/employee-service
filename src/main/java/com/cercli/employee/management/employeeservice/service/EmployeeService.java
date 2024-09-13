@@ -102,7 +102,7 @@ public class EmployeeService {
         repository.deleteById(id);
     }
 
-    private EmployeeDto convertToLocalTime(final EmployeeDto employeeDto, ZoneId employeeZoneId) {
+    public EmployeeDto convertToLocalTime(final EmployeeDto employeeDto, ZoneId employeeZoneId) {
         employeeDto.setCreatedAt(TimezoneUtil.convertToLocalTime(employeeDto.getCreatedAt(), employeeZoneId));
         employeeDto.setModifiedAt(TimezoneUtil.convertToLocalTime(employeeDto.getModifiedAt(), employeeZoneId));
         return employeeDto;
